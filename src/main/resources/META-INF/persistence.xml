@@ -9,7 +9,11 @@
 
         <!-- 이 DB Scheme 에서 JPA 가 연동할 class 들을 명시 -->
         <!-- 참고로 gradle 설정일 때만 해야 함 -->
+        <class>com.study.jpa.domain.sample.ExampleMember</class>
+        <class>com.study.jpa.domain.sample.KeyTester</class>
+        <class>com.study.jpa.domain.sample.KeyTester2</class>
         <class>com.study.jpa.domain.Member</class>
+        <class>com.study.jpa.domain.Team</class>
 
 
         <properties>
@@ -23,7 +27,7 @@
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.use_sql_comments" value="true"/>
-            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
         </properties>
     </persistence-unit>
 </persistence>
