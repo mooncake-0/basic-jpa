@@ -4,7 +4,6 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-@Entity
 @Data
 @SequenceGenerator(
         name = "KEY_TESTER_SEQ_GENERATOR",

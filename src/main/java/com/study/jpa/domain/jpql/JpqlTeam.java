@@ -1,4 +1,4 @@
-package com.study.jpa.domain;
+package com.study.jpa.domain.jpql;
 
 import lombok.Data;
 
@@ -8,8 +8,8 @@ import java.util.List;
 
 @Entity
 @Data
-@Table(name = "team")
-public class Team {
+@Table(name = "jpql_team")
+public class JpqlTeam {
 
     @Id
     @GeneratedValue
@@ -19,6 +19,5 @@ public class Team {
     private String name;
 
     @OneToMany(mappedBy = "team")
-    private List<Member> members = new ArrayList<>();
-
+    private List<JpqlMember> members = new ArrayList<>();
 }

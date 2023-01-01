@@ -10,10 +10,22 @@
         <!-- 이 DB Scheme 에서 JPA 가 연동할 class 들을 명시 -->
         <!-- 참고로 gradle 설정일 때만 해야 함 -->
         <class>com.study.jpa.domain.sample.ExampleMember</class>
-        <class>com.study.jpa.domain.sample.KeyTester</class>
-        <class>com.study.jpa.domain.sample.KeyTester2</class>
+        <!--        <class>com.study.jpa.domain.sample.KeyTester</class>-->
+        <!--        <class>com.study.jpa.domain.sample.KeyTester2</class>-->
         <class>com.study.jpa.domain.Member</class>
         <class>com.study.jpa.domain.Team</class>
+        <class>com.study.jpa.domain.Item</class>
+        <class>com.study.jpa.domain.Order</class>
+        <class>com.study.jpa.domain.OrderItem</class>
+        <class>com.study.jpa.domain.Delivery</class>
+        <class>com.study.jpa.domain.Category</class>
+
+        <!-- JPQL 관련 -->
+        <class>com.study.jpa.domain.jpql.JpqlProduct</class>
+        <class>com.study.jpa.domain.jpql.JpqlMember</class>
+        <class>com.study.jpa.domain.jpql.JpqlOrder</class>
+        <class>com.study.jpa.domain.jpql.JpqlProduct</class>
+        <class>com.study.jpa.domain.jpql.JpqlTeam</class>
 
 
         <properties>
